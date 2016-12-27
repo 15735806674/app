@@ -1,0 +1,82 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    -webkit-text-size-adjust: 100%;
+    -webkit-user-select: none;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide:nth-child(1){
+    background: #B452F7;
+}
+.swiper-slide:nth-child(2){
+    background: #F8605F;
+}
+.swiper-slide:nth-child(3){
+    background: #36A0F8;
+}
+.tou1{
+    box-sizing: border-box;
+    width: 5rem;
+    height: 2.5rem;
+    background: url("../img/ccc_03.png")no-repeat;
+    background-size: contain;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+}
+.con1{
+    float: left;
+    box-sizing: border-box;
+    width: 7.5rem;
+    height:6rem;
+    background: url("../img/ccc_07.png")no-repeat;
+    background-size: contain;
+    margin-left: 0.3rem;
+    margin-top: 0.5rem;
+}
+.tou2{
+    background: url("../img/ccc-恢复的_12.png")no-repeat;
+    background-size: contain;
+}
+.con2{
+    background:url("../img/ccc-恢复的_13.png") no-repeat;
+    background-size: contain;
+}
+.tou3{
+    background: url("../img/ccc1_03.png")no-repeat;
+    background-size: contain;
+}
+.con3{
+    background:url("../img/ccc.png") no-repeat;
+    background-size: contain;
+    margin-left: 2rem;
+}
+.start{
+    width:2.5rem;
+    height: 1rem;
+    background: #FB6B6B;
+    color:#fff;
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 0.1rem;
+    float: left;
+    margin-top: 0.5rem;
+    margin-left: 2.7rem;
+    font-size: 0.4rem;
+    font-weight:bold;
+
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.animate1.0.2.min (1).js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/bili.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/shan.css">
+    <script>
+        window.onload=function(){
+            resize(750);
+        }
+    </script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="tou1 ani"swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+            <div class="con1 ani"swiper-animate-effect="zoomInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="tou1 tou2  ani"swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+            <div class="con1 con2 ani"swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="tou1 tou3   ani"swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+            <div class="con1 con3 ani"swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+            <a href="index.html">  <div class="start ani"swiper-animate-effect="tada" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">马上体验</div></a>
+
+        </div>
+
+
+</div>
+    <div class="swiper-pagination"></div>
+</div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper);
+        }
+    });
+</script>
+</html>
